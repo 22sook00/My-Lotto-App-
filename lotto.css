@@ -1,0 +1,100 @@
+@font-face {
+  font-family: consolaz;
+  src: url(./consolaz.ttf);
+}
+#container {
+  margin: 30px auto;
+  padding: 10px 0 30px;
+  box-sizing: border-box;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section {
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px rgb(230, 231, 250);
+}
+.title {
+  font-size: 42px;
+}
+.js-num {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20px;
+}
+/*각각의 넘버*/
+.js-num > div > p {
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
+  background-color: #c7daf0;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 8px 8px #d5f0fc inset, 0 -30px 0px #b9dcec inset;
+  line-height: 60px;
+  margin: 10px;
+}
+/*생성중*/
+.ing {
+  visibility: hidden; /* 화면창을 키거나 숫자작업이 완료되었을때.. */
+  margin: 0px;
+  font-size: 24px;
+  font-family: consolaz;
+}
+.visible {
+  visibility: visible; /* 숫자 작업이 있을때. 생성중일때*/
+}
+/*선택된 넘버*/
+.selected > p {
+  font-size: 40px;
+  font-weight: 800;
+  background-color: #9fb4f8 !important;
+  box-shadow: 0 8px 8px #c7c6ff inset, 0 -10px 0px #89acee inset !important;
+}
+.result > div {
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  padding: 0 0 15px 0;
+}
+.result > div > div {
+  width: 50px;
+  height: 50px;
+  padding: 10px 10px 8px 10px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  margin: 5px;
+  box-shadow: 0 8px 8px #f7fdfd inset;
+}
+button {
+  margin: 30px;
+  padding: 15px 25px;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  background-color: #1589f0;
+  border: none;
+  border-radius: 20px;
+}
+button:hover {
+  background-color: #0d75cf;
+  color: rgb(198, 199, 206);
+}
+button:active,
+button:focus {
+  outline: none;
+}
+.reset {
+  display: none;
+  float: right;
+  margin: -10px 10px 10px 0;
+}

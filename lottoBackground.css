@@ -1,0 +1,40 @@
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.circle1 {
+  position: absolute;
+  bottom: -400px;
+  left: -300px;
+  overflow: hidden;
+  opacity: 0.7;
+  background: linear-gradient(rgb(123, 194, 252), #5760e4);
+  width: 800px;
+  height: 800px;
+  border-radius: 47%;
+  animation: rotate_image 10s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+.circle2 {
+  position: absolute;
+  top: -400px;
+  right: -300px;
+  overflow: hidden;
+  opacity: 0.7;
+  background: linear-gradient(rgb(150, 201, 243), #9a86e2);
+  width: 800px;
+  height: 800px;
+  border-radius: 47%;
+  animation: rotate_image 10s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
